@@ -72,6 +72,7 @@ public:
 
   template <class ELFT> void fetchLazy(Symbol *Sym);
 
+  template <class ELFT> void scanShlibUndefined();
   void scanVersionScript();
 
   Symbol *find(StringRef Name);
