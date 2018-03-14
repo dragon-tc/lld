@@ -78,6 +78,7 @@ public:
                                    InputFile *File);
 
   template <class ELFT> void fetchLazy(Symbol *Sym);
+  template <class ELFT> void scanShlibUndefined();
 
   void scanVersionScript();
 
